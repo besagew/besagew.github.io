@@ -9,25 +9,13 @@
 }
 
 body,html{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    margin-left:50px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    margin:0px;
     padding: 0px;
     height: 100%;
-}
-.main{
-    display: flex;
-    height: 75vh;
-}
-.left-border, .right-border {
-    flex: 1; /* Distribute remaining space equally to the borders */
-    background-color: #000000; /* Background color for borders */
-}
-.content{
-    flex: 4; /* 4 times wider than the borders for 4:3 aspect ratio */
-    background-color: #fff; /* Background color for content */
-}
-.houndstooth {
+    list-style-type:none;
     filter: contrast();
     position: absolute;
     top: 0;
@@ -38,7 +26,37 @@ body,html{
     background-color: #323232;
     background-size: 10px;
     background-repeat: round;
-    z-index: -3;
+}
+li {
+    padding-left: 20px;
+}
+.main{
+    margin-left: 100px;
+}
+
+.mainCentered{
+    margin-left: 85px;
+    text-align: center;
+    background-color: #202020;
+    width: 80%;
+    border: #777777;
+}
+.sidebar{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 50px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-image: linear-gradient(to left, #202020,#000, #000); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    box-shadow: 1px 0 0 #777777 inset, -1px 0 0 #777777 inset;
+    z-index: -2;
+}
+
+.houndstooth {
+    
 }
 .noise{
     filter: contrast(2);
@@ -54,18 +72,8 @@ body,html{
     z-index: -1;
 }
 
-.sidebar{
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 50px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-image: linear-gradient(to left, #202020,#000, #000); /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-    box-shadow: 1px 0 0 #ffffff inset, -1px 0 0 #ffffff inset;
-    z-index: -2;
+h1{
+    padding: 30;
 }
 
 .glow {
@@ -78,8 +86,10 @@ body,html{
   @-webkit-keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--glowLow), 0 0 40px var(--glowLow), 0 0 50px var(--glowLow), 0 0 60px var(--glowLow), 0 0 70px var(--glowLow);
+      transform: translateY(0px);
     }
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px var(--glowHigh), 0 0 40px var(--glowHigh), 0 0 50px var(--glowHigh), 0 0 60px var(--glowHigh), 0 0 70px var(--glowHigh), 0 0 80px var(--glowHigh);
+      text-shadow: 0 0 20px #fff,  0 0 20px #fff, 0 0 30px var(--glowHigh), 0 0 40px var(--glowHigh), 0 0 50px var(--glowHigh), 0 0 60px var(--glowHigh), 0 0 70px var(--glowHigh);
+      transform: translateY(-5px);
     }
   }
