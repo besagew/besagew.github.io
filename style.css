@@ -1,60 +1,69 @@
 :root{
     --glowHigh: #a004de;
     --glowLow: #7c00ad;
+    --offwhite: #c6c4be;
+    --textShadow: #313131;
 }
 
 @font-face{
-    font-family: 'Charm';
-    src: url(resources/Charm-Regular.ttf)
-}
-
-@font-face{
-    font-family: 'Atlantis';
-    src: url(resources/Atlantis.ttf)
+    font-family: 'Title';
+    src: url(resources/BLKCHCRY.TTF)
 }
 
 body,html{
     font-family:ms pgothic;
-    color: #cacac3;
-    text-shadow: #313131 2px 2px;
-    font-size: 1rem;
+    color: var(--offwhite);
+    text-shadow: var(--textShadow) 2px 2px;
+    font-size: 17px;
     margin:0px;
     padding: 0px;
     height: 100%;
-    list-style-type:none;
-    filter: contrast();
-    background-color: #20201d;
+    background-color: #201f1d;
     background-repeat: round;
 }
-li {
-    padding-left: 20px;
+
+.navbar{
+    list-style-type: none;
+    background-color: #1e1d1d;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+.navbar li{
+    float:left;
+}
+.navbar li a{
+    display: block;
+    color: var(--offwhite);
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    border-right: 1px solid var(--offwhite);
+}
+.navbar li:last-child{
+    border-right: none;
+}
+
+
 .content{
     margin: auto;
     text-align: left;
-    background-color: #242424;
-    width: 80%;
-    border: #777777;
+    background-color: #232222;
+    width: 50%;
+    border-left: solid 2px var(--textShadow);
+    padding-left: 7px;
 }
 
-.mainCentered{
-    margin-left: 85px;
-    text-align: center;
-    background-color: #202020;
-    width: 80%;
-    border: #777777;
-}
-
-.houndstooth {
-    
+.titleSpan {
+    background-color: #232222;
 }
 
 h1{
-    padding: 30;
+    padding: 10;
 }
 
 .glow {
-    font-family: 'Charm';
+    font-family: 'Title';
     color: #fff;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -63,10 +72,10 @@ h1{
   @-webkit-keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--glowLow), 0 0 40px var(--glowLow), 0 0 50px var(--glowLow), 0 0 60px var(--glowLow), 0 0 70px var(--glowLow);
-      transform: translateY(0px);
+      transform: translateY(5px);
     }
     to {
       text-shadow: 0 0 20px #fff,  0 0 20px #fff, 0 0 30px var(--glowHigh), 0 0 40px var(--glowHigh), 0 0 50px var(--glowHigh), 0 0 60px var(--glowHigh), 0 0 70px var(--glowHigh);
-      transform: translateY(-5px);
+      transform: translateY(10px);
     }
   }
