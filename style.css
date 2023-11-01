@@ -11,7 +11,7 @@
 }
 
 body,html{
-    font-family:ms pgothic;
+    font-family:Garamond;
     color: var(--offwhite);
     text-shadow: var(--textShadow) 2px 2px;
     font-size: 17px;
@@ -30,20 +30,26 @@ body,html{
     overflow: hidden;
 }
 .navbar li{
-    float:left;
+    float:right;
 }
 .navbar li a{
     display: block;
     color: var(--offwhite);
     text-align: center;
-    padding: 4px;
+    padding: 5px;
     text-decoration: none;
     border-right: 1px solid var(--offwhite);
 }
-.navbar li:last-child{
+.navbar .home{
+   float: left;
+}
+.navbar .home a{
     border-right: none;
 }
 
+.navbar .active{
+    background-color: #313131;
+}
 
 .content{
     margin: auto;
@@ -53,9 +59,8 @@ body,html{
     border-left: solid 2px var(--textShadow);
     padding-left: 7px;
 }
-
-.titleSpan {
-    background-color: #232222;
+/*TODO: Add houndstooth pattern to title div*/
+.titlediv {
 }
 
 h1{
@@ -72,10 +77,10 @@ h1{
   @-webkit-keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--glowLow), 0 0 40px var(--glowLow), 0 0 50px var(--glowLow), 0 0 60px var(--glowLow), 0 0 70px var(--glowLow);
-      transform: translateY(5px);
+      transform: translateY(2px);
     }
     to {
       text-shadow: 0 0 20px #fff,  0 0 20px #fff, 0 0 30px var(--glowHigh), 0 0 40px var(--glowHigh), 0 0 50px var(--glowHigh), 0 0 60px var(--glowHigh), 0 0 70px var(--glowHigh);
-      transform: translateY(10px);
+      transform: translateY(-2px);
     }
   }
