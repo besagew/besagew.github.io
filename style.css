@@ -22,8 +22,15 @@ body,html{
     background-repeat: round;
 }
 
+ul {
+    list-style-type:none; 
+}
+
+li a{
+    text-decoration:dashed;
+}
+
 .navbar{
-    list-style-type: none;
     background-color: #1e1d1d;
     margin: 0;
     padding: 0;
@@ -59,6 +66,14 @@ body,html{
     border-left: solid 2px var(--textShadow);
     padding-left: 7px;
 }
+.albums{
+    text-align: center;
+    margin:auto;
+}
+.albums th{
+    padding:5%;
+}
+
 /*TODO: Add houndstooth pattern to title div*/
 .titlediv {
 }
