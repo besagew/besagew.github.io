@@ -62,16 +62,19 @@ li a{
     margin: auto;
     text-align: left;
     background-color: #232222;
-    width: 50%;
+    width: 70%;
     border-left: solid 2px var(--textShadow);
     padding-left: 7px;
 }
 .albums{
     text-align: center;
     margin:auto;
+    font-size: 13px;
 }
-.albums th{
-    padding:5%;
+
+.albums img{
+    max-width: 100px;
+
 }
 
 /*TODO: Add houndstooth pattern to title div*/

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="/js/sort-table.js"></script>
     <div class="content">
         <div class="titlediv">
             <h1 class="glow">calvin's site</h1>
@@ -19,27 +20,91 @@
             <li><a href="/blog/main.html">Posts</a></li>
         </ul>
         <p>
-            This is a bunch of music I like.
+            This is a bunch of music I like. All album covers here are edited to be 8-16 colors for a bit more cohesion. Also cuz i think it's cool.
+        </p>
+        <p>
+            The "Favorites" category may not always be my actual favorite songs since those can change frequently, it's usually 2-3 songs I think represent the album best.
         </p>
         <table class ='js-sort-table albums table-striped'>
             <thead>
                 <tr>
                     <th></th>
-                    <th>Title</th>
+                    <th class="js-sort-0">Title</th>
                     <th>Artist</th>
                     <th class='js-sort-date'>Released</th>
                     <th class='js-sort-number'>Rating</th>
                     <th>Comment</th>
+                    <th>Favorites</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td></td>
+                <tr> <!--MTI-->
+                    <td><img src="/resources/albumcovers/MistaThugIsolation.png"></td>
                     <td>Mista Thug Isolation</td>
                     <td>Lil Ugly Mane</td>
                     <td>02/11/2012</td>
-                    <td>100</td>
-                    <td>yup</td>
+                    <td>5</td>
+                    <td>
+                        One of the best hip hop records of all time in 
+                        terms of nailing a sound, iterating on it, and sticking
+                        with it throughout the runtime. Back to back I don't think
+                        there's a single song in MTI I would skip, every
+                        single one is crazy-ass jazz and memphis samples, twisted
+                        beats, and consistently really clever and catchy wordplay from the Mane. It's
+                        frankly a little unbelievable that nearly this entire project is made by
+                        one dude; Sonically it stands alone over 10 years after it's release despite
+                        many attempting to emulate the horrorcore memphis rap style. Ugly did it best
+                        here in 2012.
+                    </td>
+                    <td>Serious Shit, Wishmaster, Cup Fulla Beetlejuice</td>
+                </tr>
+                <tr> <!--ExMil-->
+                    <td><img src="/resources/albumcovers/Exmilitary.png"></td>
+                    <td>Exmilitary</td>
+                    <td>Death Grips</td>
+                    <td>04/25/2011</td>
+                    <td>5</td>
+                    <td>
+                        Yeah this is a given. One of the most creative and exhilarating albums I've ever heard and my introduction to music 
+                        as a whole. Front to back every song is a stand out; DG's production is loud and primal on tracks like
+                        Blood Creepin and Takyon, electronic and glitchy on tracks like Culture Shock and Known For It, and somehow flows perfectly
+                        with Ride's manic delivery and lyricism, particularly on Beware which is likely the best album opener of all time.
+                        Exmilitary will continue to sound like an album from 40 years into the future regardless of when you listen.
+                    </td>
+                    <td>Beware, Takyon</td>
+                </tr>
+                <tr>
+                    <td><img src="/resources/albumcovers/NoneShallPass.png"></td>
+                    <td>None Shall Pass</td>
+                    <td>Aesop Rock</td>
+                    <td>08/28/2007</td>
+                    <td>3.7</td>
+                    <td>
+                        One of my favorites from Aes, I think he really found his style with this release.
+                        Even the tracks I don't love manage to paint a really unique and grimey picture sonically, and Aesop delivers some of his best
+                        singles ever on this album. Great storytelling, societal commentary, Aesop's thesaurus rap, and jazzy
+                        instrumentals from Blockhead and El-P make this a solid album.
+                    </td>
+                    <td>Coffee,
+                        None Shall Pass,
+                        The Harbor is Yours
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/resources/albumcovers/HidingPlaces.png"></td>
+                    <td>Hiding Places</td>
+                    <td>Billy Woods</td>
+                    <td>03/29/2019</td>
+                    <td>4.7</td>
+                    <td>
+                        Never has an album sounded more like the cover. Hiding Places is dismal, bleak, and depressing.
+                        Billy Wood's half spoken-word half shouting flow (That I admittedly get sick of after a while) backed up by
+                        Kenny Segal's atmospheric and haunting instrumentals give this album a uniquly nihilistic sound.
+                        I could see myself laying in bed and rotting away to this album, easily one of my favorites from Woods.
+                    </td>
+                    <td>
+                        Spider Hole, Steak Knives, Red Dust
+                    </td>
                 </tr>
             </tbody>
         </table>
